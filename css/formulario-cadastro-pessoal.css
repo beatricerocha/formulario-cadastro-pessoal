@@ -8,11 +8,25 @@
 
 /* Elementos com o ID "titulo" */
 #titulo{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
     font-family: sans-serif;
-    color: #04d361;
-    margin-left: 7%;
+    max-width: 600px; 
+    color: #333; 
+    font-size: 4em; 
+    line-height: 1.4em; 
+    font-weight: 500; 
 }
-
+/* Elementos com o ID "titulo" h2 e span */
+#titulo h2 span{
+    color: #8262D2;
+    font-size: 1.2em; 
+    font-weight: 900; 
+}
 /* Elementos com o ID "subtitulo" */
 #subtitulo{
     font-family: sans-serif;
@@ -27,7 +41,6 @@
 /* Elementos de tag <fieldset>*/
 fieldset{
     border: 0;
-
 }
 
 /* Elemento de tag <body> */
@@ -35,29 +48,15 @@ body{
     background-color:#fff;
     font-family: sans-serif;
     font-size: 1em;
-    color: #E1E1E6;
+    color: #fff;
 }
 
-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    line-height: 1em;
-  }
   .space{
     position: relative;
     width: 100%;
     padding-top: 75px;
   }
-  .space h3{
-    font-size: 3em; 
-    text-align: center;
-   
-  }
+ 
   header {
     position: absolute;
     top: 0;
@@ -86,59 +85,10 @@ section {
     margin-left: 40px;
     text-decoration: none;
   }
-  .content {
-      position: relative; 
-      width: 100%; 
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center;
-  }
-   
-  .content .textBox {
-      position: relative; 
-      max-width: 600px; 
-  }
-  .content .textbox h2{
-      color: #333; 
-      font-size: 4em; 
-      line-height: 1.4em; 
-      font-weight: 500; 
-  }
+ 
   
-  .content .textbox h2 p{
-    color: #333; 
-    font-size: 4em; 
-    line-height: 1.4em; 
-    font-weight: 500; 
-  }
   
-  .content .textbox h2 span{
-      color: #017143;
-      font-size: 1.2em; 
-      font-weight: 900; 
-  }
-  .content .textbox h3{
-    color: #333; 
-    font-size: 2.5em; 
-    font-weight: 900; 
-    position: absolute;  
-    right: 480px;
-    text-align: center;
-  }
-  .content .textbox p{
-      color: #333;
-  }
-  .content .textbox a{
-  display: inline-block; 
-  margin-top: 20px; 
-  padding: 8px 20px; 
-  background: #017143;
-  color: #fff; 
-  border-radius: 40px; 
-  font-weight: 500; 
-  letter-spacing: 1px; 
-  text-decoration: none; 
-  }
+ 
   .content .imgBox{
       width: 600px; 
       display: flex; 

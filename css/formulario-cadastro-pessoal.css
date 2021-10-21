@@ -2,6 +2,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Elementos com o ID "titulo" */
@@ -30,15 +32,123 @@ fieldset{
 
 /* Elemento de tag <body> */
 body{
-    background-color:#121214;
+    background-color:#fff;
     font-family: sans-serif;
     font-size: 1em;
     color: #E1E1E6;
-    margin-left: 36%;
-    margin-top: 2%;
-    justify-content: center;
 }
 
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    line-height: 1em;
+  }
+  .space{
+    position: relative;
+    width: 100%;
+    padding-top: 75px;
+  }
+  .space h3{
+    font-size: 3em; 
+    text-align: center;
+   
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    position: relative;
+    max-width: 80px;
+  }
+  header ul {
+    position: relative;
+    display: flex;
+  }
+  header ul li {
+    list-style: none;
+  }
+  header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+  }
+  .content {
+      position: relative; 
+      width: 100%; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+  }
+   
+  .content .textBox {
+      position: relative; 
+      max-width: 600px; 
+  }
+  .content .textbox h2{
+      color: #333; 
+      font-size: 4em; 
+      line-height: 1.4em; 
+      font-weight: 500; 
+  }
+  
+  .content .textbox h2 p{
+    color: #333; 
+    font-size: 4em; 
+    line-height: 1.4em; 
+    font-weight: 500; 
+  }
+  
+  .content .textbox h2 span{
+      color: #017143;
+      font-size: 1.2em; 
+      font-weight: 900; 
+  }
+  .content .textbox h3{
+    color: #333; 
+    font-size: 2.5em; 
+    font-weight: 900; 
+    position: absolute;  
+    right: 480px;
+    text-align: center;
+  }
+  .content .textbox p{
+      color: #333;
+  }
+  .content .textbox a{
+  display: inline-block; 
+  margin-top: 20px; 
+  padding: 8px 20px; 
+  background: #017143;
+  color: #fff; 
+  border-radius: 40px; 
+  font-weight: 500; 
+  letter-spacing: 1px; 
+  text-decoration: none; 
+  }
+  .content .imgBox{
+      width: 600px; 
+      display: flex; 
+      justify-content: flex-end; 
+      padding-right: 50px; 
+      margin-top: 50px; 
+  }
+  .content .imgBox img{
+    max-width: 340px;
+  }
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
 input, select, textarea, button{
     font-family: sans-serif;

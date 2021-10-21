@@ -85,20 +85,26 @@ body{
     margin-left: 40px;
     text-decoration: none;
   }
+
+  .content {
+    position: relative; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.content .imgBox{
+    width: 600px; 
+    display: flex; 
+    justify-content: flex-end; 
+    padding-right: 50px; 
+    margin-top: 50px; 
+}
+.content .imgBox img{
+  max-width: 340px;
+}
  
-  
-  
- 
-  .content .imgBox{
-      width: 600px; 
-      display: flex; 
-      justify-content: flex-end; 
-      padding-right: 50px; 
-      margin-top: 50px; 
-  }
-  .content .imgBox img{
-    max-width: 340px;
-  }
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
 input, select, textarea, button{
     font-family: sans-serif;

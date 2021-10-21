@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.space{
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom:75px;
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+
+.content {
+    position: relative; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+ 
+.content .textBox {
+    position: relative; 
+    max-width: 600px; 
+}
+.content .textbox h2{
+    color: #222; 
+    font-size: 4em; 
+    line-height: 1em; 
+    font-weight: 500; 
+}
+
+.content .textbox h2 span{
+    color: #9758CB;
+    font-size: 1.2em; 
+    font-weight: 900; 
+}
+
+.content .imgBox{
+    width: 600px; 
+    display: flex; 
+    justify-content: flex-end; 
+    padding-right: 50px; 
+    margin-top: 50px; 
+}
+.content .imgBox img{
+  max-width: 340px;
+}
+.subtitulo{
+  position: relative;
+  width: 100%;
+}
+.subtitulo h3{
+  font-size: 3em; 
+  text-align: center;
+ color: #333;
+}

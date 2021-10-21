@@ -1,155 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Metadados-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<html lang="pt">
 
-    <!-- conexão com o css-->
-    <link rel="stylesheet" type="text/css" href="css/formulario-cadastro-pessoal.css" media="screen">
-    <!-- conexão com o js-->
-    <script src="/js/busca-cep.js" type='module' defer></script>
-    <script type="text/javascript" src="js/mascara-de-validacao.js"></script>
-    <!-- título da página-->
-    <title>Cadastro Paciente</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Imagens/logo-HN.svg" type="image/x-icon">
+    <title>Vita Nostra - Home Care</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body> 
-    <!-- Barra de Navegação -->
+<body>
     <div class="space">
-            <header>
+        <!-- Barra de Navegação -->
+        <header>
             <a href="#"> <img src="img/logo.png" class="logo"></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Saiba Mais</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Sobre.html"> Sobre Nós</a></li>
+                <li><a href="./Contato.html"> Contato </a></li>
+                <li><a href="./SaibaMais.html"> Saiba Mais </a></li>
             </ul>
         </header>
-    </div>
-     <!-- Título -->
-            <div id="titulo">
-                <h2>Bem-estar e <span>Longevidade</span><br> em um só lugar</h2>
+        <!-- Título -->
+        <div class="content">
+            <div class="textbox">
+                <h2>Bem-estar e <span>Longevidade</span><br>em um só lugar</h2><br>
             </div>
-            
-   <!-- imagem brand -->
-   <div class="content">
-   <div class="imgBox">
-   <img src="img/brand.png" alt="Na imagem o logo ." />
-</div>  
-</div>
-    <!-- cabeçalho da página com título e subtítulo (ambos com css de id "titulo")-->
-    <div>
-        <h1 id="content">Cadastro Paciente</h1>
-        <p id="textbox">Insira suas informações</p>
-        <br>
+            <!-- imagens -->
+            <div class="imgBox">
+                <img src="img/brand.png" class="hopenews" alt="Na imagem temos o logo da marca" />
+            </div>
+        </div>
     </div>
 
-    <!-- Início do formulário -->
-    <form id="formulario">
+    <!--notícias -->
 
-        <fieldset class="grupo">
-            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
-                <div class="campo">
-                    <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>                    
-                </div>
-            <!-- Campo de email com legenda "email" e css de classe "campo-->
-            <div class="campo">
-                <label for="email"><strong>Email</strong></label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email"required>                    
-            </div>              
-        </fieldset>
-        
-        <fieldset class="grupo">
-            <!-- Campo de CPF com legenda "CPF" e css de classe "campo-->
-                <div class="campo">
-                    <label for="cpf"><strong>CPF</strong></label>
-                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" pattern="[0-9]{11}"required>                    
-                </div>
-            <!-- Campo de RG com legenda "RG" e css de classe "campo-->
-                <div class="campo">
-                    <label for="rg"><strong>RG</strong></label>
-                    <input type="text" name="rg" id="rg" placeholder="Digite seu RG" pattern="[0-9]{9}">                    
-                </div>
-        </fieldset>
-         
+    <div class="subtitulo">
+            <h3>Cadastro de Pacientes</h3>
+    </div>
     
-        <fieldset class="grupo">
-           <!-- Campo de Celular com legenda "celular" e css de classe "campo-->
-                <div class="campo">
-                    <label for="celular"><strong>Celular</strong></label>
-                    <input type="text" name="celular" id="celular" placeholder="Digite seu celular"pattern="[0-9]{11}" required>                    
-                </div>
-            <!-- Campo de RG com legenda "RG" e css de classe "campo-->
-                <div class="campo">
-                    <label for="telefone"><strong>Telefone Fixo</strong></label>
-                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone fixo" pattern="[0-9]{10}">                    
-                </div>
-        </fieldset>
-
-            <!-- Campo de sexo com 2 opções de botões selecionáveis (radio button) e css de classe "campo" -->
-            <div class="campo">
-                <label><strong>Qual o seu sexo?</strong></label>
-                <label>
-                    <input type="radio" name="sexo" value="Masculino">Masculino
-                </label>
-                <label>
-                    <input type= "radio" name="sexo" value="Feminino">Feminino                 
-                </label>
-            </div>
-
-        <fieldset class="grupo">
-            <!-- Campo de cep com legenda "cep" e css de classe "campo-->
-                <div class="campo">
-                    <label for="cep"><strong>CEP</strong></label>
-                    <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" required> 
-                </div>
-            <!-- Campo de endereco com legenda "endereco" e css de classe "campo-->
-                <div class="campo">
-                    <label for="endereco"><strong>Endereço</strong></label>
-                    <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required> 
-                </div>
-        </fieldset>
-
-        <fieldset class="grupo">
-            <!-- Campo de numero com legenda "numero" e css de classe "campo-->
-                <div class="campo">
-                    <label for="numero"><strong>Número</strong></label>
-                    <input type="text" name="numero" id="numero" placeholder="Digite o número do local" required> 
-                </div>
-            <!-- Campo de bairro com legenda "bairro" e css de classe "campo-->
-                <div class="campo">
-                    <label for="bairro"><strong>Bairro</strong></label>
-                    <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro"> 
-                </div>
-        </fieldset>
-
-        <fieldset class="grupo">
-            <!-- Campo de cidade com legenda "cidade" e css de classe "campo-->
-                <div class="campo">
-                    <label for="cidade"><strong>Cidade</strong></label>
-                    <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">  
-                </div>
-            <!-- Campo de estado com legenda "estado" e css de classe "campo-->
-                <div class="campo">
-                    <label for="estado"><strong>Estado</strong></label>
-                    <input type="text" name="estado" id="estado" placeholder="Digite seu estado"> 
-                </div>
-        </fieldset>
-
-            <!-- Botão para enviar o formulário -->
-                <button class="botao" type="submit">Enviar</button>
-    </form>
-            <!-- Início do footer classe rodapé -->
-    <footer class="rodape">
-        <div class="campo">
-        <p class="legenda"><strong>Desenvolvido por: Beatrice Rocha</strong></p>
-            <!-- logo LinkedIn e github com os links do autor -->
-        <a href="https://github.com/beatricerocha/formulario-cadastro-pessoal"> <img src="img/github-logo.png" alt="GitHub"/></a>
-        <a href="https://www.linkedin.com/in/beatrice-rocha/"> <img src="img/linkedin-logo.png" alt="LinkedIn"/>
-        </div> </a>    
-      </footer>
-
+    
 </body>
+
 </html>

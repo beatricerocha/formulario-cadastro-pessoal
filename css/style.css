@@ -194,15 +194,39 @@ fieldset.grupo .campo{
   color: #9758CB;
 }
 /* logo LinkedIn e github*/
-div >a >img{
-  height:35px;
-  width:35px; 
-  margin-left: 2em;
-  margin-top:0.2rem; 
-  margin-right: 1em;
-}
+
 #formulario{
-  margin-left: 33.3%;
+  margin-left: 34%;
   margin-top: 2%;
   justify-content: center;
+}
+
+/*footer*/
+footer{
+background: #9758CB;
+padding-top: 15px;
+padding-bottom: 15px;
+color: #fff;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content p{
+max-width: 500px;
+margin: 5px auto;
+line-height: 15px;
+font-size: 14px;
+}
+.footer-content a{
+color: #fff;
+text-decoration: none;
+}
+.footer-content a i{
+  justify-content: space-between;
+  padding: 0.2em;
+  
 }

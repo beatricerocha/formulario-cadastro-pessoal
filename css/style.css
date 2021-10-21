@@ -62,7 +62,7 @@ header ul li a {
 .content .textbox h2{
     color: #222; 
     font-size: 4em; 
-    line-height: 1em; 
+    line-height: 1.2em; 
     font-weight: 500; 
 }
 
@@ -80,7 +80,7 @@ header ul li a {
     margin-top: 50px; 
 }
 .content .imgBox img{
-  max-width: 340px;
+  max-width: 450px;
 }
 .subtitulo{
   position: relative;

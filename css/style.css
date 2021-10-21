@@ -180,19 +180,7 @@ fieldset.grupo .campo{
 .botao, select{
   cursor: pointer;
 }
-/* Elementos de classe rodape */
-.rodape{
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-/* Elementos de classe legenda */
-.legenda{
-  font-family: sans-serif;
-  color: #9758CB;
-}
+
 /* logo LinkedIn e github*/
 
 #formulario{
@@ -221,12 +209,11 @@ margin: 5px auto;
 line-height: 15px;
 font-size: 14px;
 }
-.footer-content a{
-color: #fff;
-text-decoration: none;
+.fa-github:before { 
+  content: "\f09b";
+   color: #fff; 
 }
-.footer-content a i{
-  justify-content: space-between;
-  padding: 0.2em;
-  
+.fa-linkedin-square:before {
+  content: "\f08c";
+  color: #fff; 
 }

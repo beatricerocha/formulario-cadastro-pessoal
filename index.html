@@ -11,6 +11,7 @@
   <!-- conexão com o js-->
   <script src="js/mascara-de-validacao.js" defer></script>
   <script src="js/busca-cep.js" defer></script>
+  <script src="js/bd.js" defer></script>
 
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -52,7 +53,7 @@
     
 
 <!-- Início do formulário -->
-<form id="formulario">
+<form id="formulario" onsubmit="salvar()">
 
     <fieldset class="grupo">
         <!-- Campo do nome com legenda "nome" e css de classe "campo" -->

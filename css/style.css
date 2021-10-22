@@ -192,28 +192,19 @@ fieldset.grupo .campo{
 /*footer*/
 footer{
 background: #9758CB;
-padding-top: 15px;
-padding-bottom: 15px;
+padding-top: 25px;
+padding-bottom: 25px;
 color: #fff;
+line-height:12px;
 }
 .footer-content{
-display: flex;
 align-items: center;
-justify-content: center;
-flex-direction: column;
 text-align: center;
 }
 .footer-content p{
 max-width: 500px;
-margin: 5px auto;
-line-height: 15px;
-font-size: 14px;
+margin: auto;
 }
-.fa-github:before { 
-  content: "\f09b";
+.footer-content,  .fa-github:before, .fa-linkedin-square:before { 
    color: #fff; 
-}
-.fa-linkedin-square:before {
-  content: "\f08c";
-  color: #fff; 
 }

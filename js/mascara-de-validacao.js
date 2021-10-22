@@ -1,5 +1,5 @@
 //mascara celular  somente números 11 digitos sem espaço e "-"
-$("#celular").mask("00000000009");
+$("#celular").mask("0000000000");
 //mascara telefone somente números 10 digitos sem espaço e "-"
 $("#telefone").mask("0000000000");
 //mascara CPF somente números 11 digitos sem espaço, "." e "-"

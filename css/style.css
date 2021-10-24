@@ -1,22 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*Todos os elementos da página*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.space{
-  padding-top: 150px;
+/* Elemento classe space entre barra de navegação e slogan */
+.space {
+  padding-top: 200px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom:75px;
+  padding-bottom: 100px;
   display: flex;
   align-items: center;
   line-height: 1em;
 }
 
+/* Elementos de tag <header>*/
 header {
   position: absolute;
   top: 0;
@@ -27,17 +29,25 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+/* Elementos de tag <header> e classe logo*/
 header .logo {
   position: relative;
   max-width: 80px;
 }
+
+/* Elementos de tags <header> e <ul>*/
 header ul {
   position: relative;
   display: flex;
 }
+
+/* Elementos de tags <header>, <ul> e <li>*/
 header ul li {
   list-style: none;
 }
+
+/* Elementos de tag <header>, <ul>, <li>, <a>*/
 header ul li a {
   display: inline-block;
   color: #333;
@@ -46,59 +56,73 @@ header ul li a {
   text-decoration: none;
 }
 
-
+/* Elementos de classe "content" */
 .content {
-    position: relative; 
-    width: 100%; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
- 
+
+/* Elementos de classe "content" e "textBox" */
 .content .textBox {
-    position: relative; 
-    max-width: 600px; 
-}
-.content .textbox h2{
-    color: #222; 
-    font-size: 4em; 
-    line-height: 1.2em; 
-    font-weight: 500; 
+  position: relative;
+  max-width: 600px;
 }
 
-.content .textbox h2 span{
-    color: #9758CB;
-    font-size: 1.2em; 
-    font-weight: 900; 
+/* Elementos de classe "content", "textBox" de tag <h2> */
+.content .textbox h2 {
+  color: #222;
+  font-size: 4em;
+  line-height: 1.2em;
+  font-weight: 500;
 }
 
-.content .imgBox{
-    width: 600px; 
-    display: flex; 
-    justify-content: flex-end; 
-    padding-right: 50px; 
-    margin-top: 50px; 
+/* Elementos de classe "content", "textBox" de tag <h2>, <span> */
+.content .textbox h2 span {
+  color: #9758cb;
+  font-size: 1.2em;
+  font-weight: 900;
 }
-.content .imgBox img{
+
+/* Elementos de classe "content", "imgBox" */
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+/* Elementos de classe "content", "imgBox" de tag <img> */
+.content .imgBox img {
   max-width: 450px;
 }
-.subtitulo{
+
+/* Elementos de classe "subtitulo" */
+.subtitulo {
   position: relative;
   width: 100%;
 }
-.subtitulo h3{
-  font-size: 3em; 
+
+/* Elementos de classe "subtitulo" de tag  <h3> */
+.subtitulo h3 {
+  font-size: 3em;
   text-align: center;
- color: #333;
+  color: #333;
 }
 
 /* Elementos de tag <fieldset>*/
-fieldset{
+fieldset {
   border: 0;
 }
 
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea, button{
+input,
+select,
+textarea,
+button {
   font-family: sans-serif;
   font-size: 1em;
   color: #121214;
@@ -106,7 +130,8 @@ input, select, textarea, button{
 }
 
 /* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
+.grupo:before,
+.grupo:after {
   display: table;
 }
 
@@ -116,49 +141,54 @@ input, select, textarea, button{
 }
 
 /* Elementos de classe "campo" */
-.campo{
+.campo {
   margin-bottom: 1em;
 }
 
 /* Elementos de classe "campo" de tag <label> */
-.campo label{
+.campo label {
   margin-bottom: 0.2em;
-  color: #9758CB;
+  color: #9758cb;
   display: block;
 }
 
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo{
+fieldset.grupo .campo {
   float: left;
   margin-right: 1em;
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type = "text"], .campo input[type = "email"], .campo select, .campo textarea{
+.campo input[type='text'],
+.campo input[type='email'],
+.campo select,
+.campo textarea {
   padding: 0.2em;
-  border: 1px solid #9758CB;
+  border: 1px solid #9758cb;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
 }
 
 /* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option{
+.campo select option {
   padding-right: 1em;
 }
 
 /* Elemento de classe "campo" com tag <input>, <select> e <textarea> todas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus{
-  background: #F2DFFB;
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  background: #f2dffb;
 }
 
-/* Elemento de classe "botao" *//* Elemento de classe "botao" */
-.botao{
+/* Elemento de classe "botao" */ /* Elemento de classe "botao" */
+.botao {
   font-size: 1.2em;
-  background: #9758CB;
-  border:0;
+  background: #9758cb;
+  border: 0;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #E1E1E6;
+  color: #e1e1e6;
   padding: 0.2em 0.6em;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -170,41 +200,48 @@ fieldset.grupo .campo{
 }
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover{
-  background: #F2DFFB;
+.botao:hover {
+  background: #ccbbff;
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-shadow: none;
 }
 
 /* Elementos de classe botão e de tag <select> */
-.botao, select{
+.botao,
+select {
   cursor: pointer;
 }
 
-/* logo LinkedIn e github*/
+/* Id formulario*/
 
-#formulario{
+#formulario {
   margin-left: 34%;
   margin-top: 2%;
   justify-content: center;
 }
 
 /*footer*/
-footer{
-background: #9758CB;
-padding-top: 25px;
-padding-bottom: 25px;
-color: #fff;
-line-height:12px;
+footer {
+  background: #9758cb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #fff;
+  line-height: 12px;
 }
-.footer-content{
-align-items: center;
-text-align: center;
+
+/* Elementos de classe "footer-content" */
+.footer-content {
+  align-items: center;
+  text-align: center;
 }
-.footer-content p{
-max-width: 500px;
-margin: auto;
+/* Elementos de classe "footer-content" de tag <p>*/
+.footer-content p {
+  max-width: 500px;
+  margin: auto;
 }
-.footer-content,  .fa-github:before, .fa-linkedin-square:before { 
-   color: #fff; 
+/* Elementos de classe "footer-content" sendo .fa dos logos de github e linkedin no estado "before"*/
+.footer-content,
+.fa-github:before,
+.fa-linkedin-square:before {
+  color: #fff;
 }

@@ -1,7 +1,7 @@
 var db = openDatabase('Paci', '2.0', 'Paci', 8086)
 db.transaction(function (criar) {
   criar.executeSql(
-    'CREATE TABLE p (id PRIMARY KEY, nome VARCHAR(255), email VARCHAR(255), cpf INTEIRO, rg INTEIRO, celular INTEIRO, telefone INTEIRO, cep INTEIRO)'
+    'CREATE TABLE paco (id PRIMARY KEY, nome VARCHAR(255), email VARCHAR(255), cpf INTEIRO, rg INTEIRO, celular INTEIRO, telefone INTEIRO, cep INTEIRO, endereco VARCHAR(255), numero INTEIRO)'
   )
 })
 
@@ -13,11 +13,12 @@ function salvar() {
   var celular = document.getElementById('celular').value
   var telefone = document.getElementById('telefone').value
   var cep = document.getElementById('cep').value
-
+  var endereco = document.getElementById('endereco').value
+  var numero = document.getElementById('numero').value
   db.transaction(function (armazenar) {
     armazenar.executeSql(
-      'INSERT INTO p (nome, email, cpf, rg, celular, telefone, cep) VALUES (?, ?, ?, ?, ?, ?, ?)',
-      [nome, email, cpf, rg, celular, telefone, cep]
+      'INSERT INTO paco (nome, email, cpf, rg, celular, telefone, cep, endereco, numero) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      [nome, email, cpf, rg, celular, telefone, cep, endereco, numero]
     )
   })
 }

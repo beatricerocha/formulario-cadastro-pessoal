@@ -6,13 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inserir logos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <!-- conexão com o js-->
   <script src="js/mascara-de-validacao.js" defer></script>
   <script src="js/busca-cep.js" defer></script>
-  <script src="js/alert.js" defer></script>
-
+    <!-- Inserir fav ico -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- título da página-->
     <title>Vita Nostra - Home Care</title>
@@ -32,34 +31,31 @@
                 <li><a href="./SaibaMais.html"> Saiba Mais </a></li>
             </ul>
         </header>
-        <!-- Título -->
+        <!-- Slgan -->
         <div class="content">
             <div class="textbox">
                 <h2>Bem-estar e <span>Longevidade</span><br>em um só lugar</h2><br>
             </div>
-            <!-- imagens -->
+            <!-- imagens brand-->
             <div class="imgBox">
                 <img src="img/brand.png" class="hopenews" alt="Na imagem temos o logo da marca" />
             </div>
         </div>
     </div>
-
     <!--SUBTITULO -->
-
     <div class="subtitulo">
             <h3>Cadastro de Pacientes</h3>
     </div>
     
-
-<!-- Início do formulário -->
-<form id="formulario" onSubmit="return confirm('Deseja enviar o formulário?') " >
-
+<!-- Início do formulário onSubmit bre caixa de dialogo para confirmar -->
+<form id="formulario" onSubmit="return confirm('Deseja enviar o formulário?')" >
     <fieldset class="grupo">
         <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
             <div class="campo">
                 <label for="nome"><strong>Nome *</strong></label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>                    
             </div>
+
         <!-- Campo de email com legenda "email" e css de classe "campo-->
         <div class="campo">
             <label for="email"><strong>Email *</strong></label>
@@ -73,6 +69,7 @@
                 <label for="cpf"><strong>CPF *</strong></label>
                 <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" pattern="[0-9]{11}"required>                    
             </div>
+
         <!-- Campo de RG com legenda "RG" e css de classe "campo-->
             <div class="campo">
                 <label for="rg"><strong>RG</strong></label>
@@ -80,7 +77,6 @@
             </div>
     </fieldset>
      
-
     <fieldset class="grupo">
        <!-- Campo de Celular com legenda "celular" e css de classe "campo-->
             <div class="campo">
@@ -111,6 +107,7 @@
                 <label for="cep"><strong>CEP *</strong></label>
                 <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" required> 
             </div>
+
         <!-- Campo de endereco com legenda "endereco" e css de classe "campo-->
             <div class="campo">
                 <label for="endereco"><strong>Endereço *</strong></label>
@@ -124,6 +121,7 @@
                 <label for="numero"><strong>Número *</strong></label>
                 <input type="text" name="numero" id="numero" placeholder="Digite o número do local" required> 
             </div>
+
         <!-- Campo de bairro com legenda "bairro" e css de classe "campo-->
             <div class="campo">
                 <label for="bairro"><strong>Bairro</strong></label>
@@ -137,6 +135,7 @@
                 <label for="cidade"><strong>Cidade</strong></label>
                 <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">  
             </div>
+            
         <!-- Campo de estado com legenda "estado" e css de classe "campo-->
             <div class="campo">
                 <label for="estado"><strong>Estado</strong></label>
